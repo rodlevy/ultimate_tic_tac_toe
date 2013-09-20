@@ -57,7 +57,7 @@ COMPUTER = "O"
 	end
 
 	def play
-		@board = @board || Board.new(@interface.grid_size)
+		@board = @board ||= Board.new(@interface.grid_size)
 
 		until game_over
 
