@@ -1,6 +1,7 @@
 # UltimateTicTacToe
 
-TODO: Write a gem description
+This Gem is meant to serve as the computer decision-making engine for playing Tic Tac Toe.
+It uses the minimax recursive algorith
 
 ## Installation
 
