@@ -2,7 +2,6 @@ require 'computer'
 require 'board'
 
 describe Computer do
-	let!(:new_interface) {Interface.new}
 	let!(:new_board) {Board.new(9)}
 	let(:new_computer) {Computer.new}
 	let(:fun_game) {Game.new(new_interface, new_computer)}
