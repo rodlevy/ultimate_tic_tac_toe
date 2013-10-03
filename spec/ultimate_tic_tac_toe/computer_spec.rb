@@ -1,5 +1,5 @@
+require 'spec_helper'
 require 'computer'
-require 'board'
 
 describe Computer do
 	let!(:new_board) {Board.new(9)}
@@ -18,6 +18,11 @@ describe Computer do
 
 	it "checks for ties during recursion" do
 		new_board.grid = ["X","O","X","X","O","O","O","X","X"]
+		new_computer.minimax_recurse(new_board, "O", 8).should == 0
+	end
+
+	it "checks for ties during recursion" do
+		new_board.grid = ["X","O","X","X","O","X","O","X","O"]
 		new_computer.minimax_recurse(new_board, "O", 8).should == 0
 	end
 

@@ -18,7 +18,7 @@ describe Board do
 	end
 
 	it 'checks for a tie' do
-		new_board.grid = ["X","O","X","X","O","O","O","X","X"]
+		new_board.grid = ["X","O","X","X","O","X","O","X","O"]
 		new_board.tie?.should == true
 	end
 
